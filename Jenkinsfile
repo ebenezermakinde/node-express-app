@@ -29,6 +29,6 @@ node {
     
     stage('ManifestUpdate Job Trigger') {
                 echo "Manisfest job has started"
-                build job: 'manifestupdate', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+                build job: 'node-express-manifest-updater', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
         }
 }
