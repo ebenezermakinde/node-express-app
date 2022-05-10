@@ -2,7 +2,7 @@ const app = require("express")();
 
 // define home page
 app.get("/", (req, res) => {
-    res.send('Hello, App ready to recieve requests!!!!')
+    res.send('Hello, Node app is ready to rock!')
 });
 
 // listen on port 4000
